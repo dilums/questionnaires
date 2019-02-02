@@ -6,7 +6,7 @@ const Navigation = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src="/images/qa.png" alt="" />
+          <img src="/questionnaires/images/qa.png" alt="" />
         </Link>
         <button
           className="navbar-toggler"

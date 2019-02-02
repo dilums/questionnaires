@@ -1,0 +1,99 @@
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+.text-slanted {
+  font-family: "Courgette", cursive;
+}
+
+.dialogue-box {
+  /* Container for QA compnents and responses */
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 0.3rem;
+  background: #edf0f3;
+}
+
+/* question form */
+.btn-confirm {
+  background: #2068c5;
+  color: #fff;
+}
+.hide_input {
+  display: none;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+}
+input[type="radio"] + label > .fa-check-circle:before {
+  content: "\f00c";
+  width: 1.7rem;
+  height: 1.7rem;
+  color: #edf0f3;
+  background: #edf0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+input[type="radio"]:checked + label > .fa-check-circle:before {
+  content: "\f00c";
+  background: #2bc923;
+}
+.question-legend {
+  color: #515254;
+}
+.option {
+  background: #fff;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+}
+/* end of question form*/
+
+/* question list */
+.list-topic {
+  color: #2e3a73;
+}
+.category-topic {
+  color: #7e85a9;
+}
+.btn-q {
+  background: #e5e8ef;
+  color: #2e3a73;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.2rem;
+}
+.btn-q:hover {
+  background: #c6eccf;
+  text-decoration: none;
+  color: #3c8050;
+}
+/* end of question list */
+
+/* Loading icon */
+.loading {
+  font-size: 4rem;
+  margin-left: 50%;
+  transform: translateX(-20%);
+  margin-top: 2rem;
+  color: rgb(138, 159, 185);
+}
+.loading {
+  animation: loading 3s infinite;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* end of loading icon */
